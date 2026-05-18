@@ -45,9 +45,7 @@ nav .logos #logo{
     margin-left: 3px;
     display: none;
 }
-nav .logos{
-    margin-left: -2px;
-}
+
 nav .logos .logo-img{
   padding-top: 10px;
   margin-left: -5px;
