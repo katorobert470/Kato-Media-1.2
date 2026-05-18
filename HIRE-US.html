@@ -105,8 +105,8 @@
          </select> <br><br>
           <label for="files" style="color: rgb(16, 110, 32);"> You have a free trial, upload a files:</label>
          <input type="file" id="files" name="files" single><br><br>
-         <button type="submit" id="submit-button" style="color: green;">submit</button>
-         <span><button type="reset" style="color: brown;"> reset</button></span>
+         <button type="submit" id="submit" style="color: green;">submit</button>
+         <span><button type="reset" id="reset" "color: brown;"> reset</button></span>
           <h4 id="submitted"></h4>
            </form>
      </div>
@@ -126,19 +126,17 @@
 
 </section>
 <script>
-const btn =document.getElementById('submit-button');
-const statustext=document.getElementById('submitted');
 
-btn.addEventListener('click', function(event){
-  event.preventDefault();
-  statustext.innerText="Your Form is succesfully submitted! We shall reach you via your emmail.";
+document.getElementById("reset").addEventListener("click", myFunction);
 
-  statustext.style.color="green";
-  statustext.style.fontWeight="bold";
+function myFunction() {
+  alert ("you have reset your form! please fill it again");
+}
+document.getElementById("submit").addEventListener("click", submitform);
 
-})
-
-
+function submitform() {
+  alert ("Your form has been succesfully submited. We shall reach out soon");
+}
 
 </script>
 </body>
